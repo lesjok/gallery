@@ -1,0 +1,51 @@
+.pagination {
+  padding-bottom: 97px;
+  &__container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    width: 280px;
+    height: 41px;
+  }
+  &__button {
+    cursor: pointer;  
+    background-color: transparent;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #fff;
+    width: 41px;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+  }
+  &__button:disabled {
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  &__button.active {
+    background-color: #fff;
+    color: #000;
+  }
+  &__button:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  &__button:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+  &__button:hover {
+    background-color: #464646;
+  }
+  &__button.active:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  &__item &__button {
+    border-radius: initial;
+  }
+}
+.button {
+  &__rotate {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,42 @@
+.select {
+  &__btn.date-active {
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+  }
+  &__btn.date-active.select__btn::after {
+    transform: rotate(180deg);
+  }
+  &__list {
+    &_dates {
+      padding: 20px 21px;
+      gap: 10px;
+      top: 35px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      overflow: none;
+      height: auto;
+    }
+  }
+  &__date {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    height: 45px;
+    border: none;
+  }
+  &__date::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
